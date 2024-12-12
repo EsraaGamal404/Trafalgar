@@ -64,8 +64,11 @@ header nav input{
     .hero .container .image img,.blob{
       display: none;
     }
-    .leading .container .image img{
+    .leading .container .image img,.apps .container .image img{
       width: 300px;
+    }
+    .apps .container{
+      display: flex; align-items: center; justify-content: space-between; flex-direction: column-reverse;
     }
   }
   @media (min-width:992px){
@@ -112,7 +115,7 @@ header nav input{
     justify-content: space-between;
   }
   .hero .container .image img{
-    max-width: 600px;
+    max-width: 500px;
   }
   .logo a{
     font-size: 35px;
@@ -155,7 +158,7 @@ header nav input{
   justify-content: center;
   flex-direction: column;
 }
-.services,.leading{
+.services,.leading,.apps{
   padding-top: 90px;
 }
 .services .container h2,.Details h2{
@@ -217,7 +220,7 @@ padding: 10px;
   font-weight: 400;
   font-size: 18px;
 }
-.leading .container{
+.leading .container,.apps .container{
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
