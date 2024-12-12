@@ -158,8 +158,8 @@ header nav input{
   justify-content: center;
   flex-direction: column;
 }
-.services,.leading,.opinion,.apps{
-  position: relative; top: 30vh;
+.services,.apps,.leading,.opinion{
+padding-top: 120px;
 }
 .services .container h2,.Details h2{
   color: var(--title-color);
