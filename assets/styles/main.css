@@ -159,7 +159,7 @@ header nav input{
   flex-direction: column;
 }
 .services,.leading,.opinion,.apps{
-  position: relative; top: 25vh;
+  position: relative; top: 30vh;
 }
 .services .container h2,.Details h2{
   color: var(--title-color);
