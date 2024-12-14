@@ -70,9 +70,6 @@ header nav input{
     .apps .container{
       display: flex; align-items: center; justify-content: space-between; flex-direction: column-reverse;
     }
-    .opinion .charater{
-      display: flex; flex-wrap: wrap; width: fit-content; flex-direction: column;
-    }
   }
   @media (min-width:992px){
     header nav label,
@@ -155,37 +152,44 @@ header nav input{
   padding: 15px 30px;
   font-size: 16px;
 }
-.services .container{
+.services .container,.articles .container{
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
 }
-.services,.apps,.leading,.opinion{
+.services,.apps,.leading{
 padding-top: 120px;
 }
 .services .container h2,.Details h2{
   color: var(--title-color);
   font-size: 38px;
 }
-.services .container .line, .Details .line,.opinion .line {
+.services .container .line, .articles .line,.Details .line {
   background-color: var(--title-color);
   height: 2px;
   width: 50px;
   position: absolute;
   margin-top: -20px;
 }
-.option{
+.articles .line{
+  margin-top: 90px;
+}
+.option,.card{
   background-color:#fff;
   box-shadow: 2px 2px 10px 2px rgb(0 0 0 /0.1);
 padding: 10px;
   width: fit-content;
   border-radius: 20px;
 }
-.option h3{
-  font-size: 24px;
+.card{
+   padding: 0px 0px 20px 0px;
 }
-.option p,.Details p,.services .container p,.charater p{
+.option h3,.card h3{
+  font-size: 20px;
+  line-height: 1.5; 
+}
+.option p,.Details p,.services .container p,.charater p,.articles p{
   color: var(--text-color);
   line-height: 1.5;
 }
@@ -243,13 +247,17 @@ padding: 10px;
   color: var(--alt-text-color);
   padding-top: 60px;
 }
+.articles{
+  padding-top: 60px;
+}
 .testimonials .container {
   background-color: var(--main-color);
   border-radius: 20px;
   padding: 40px;
 }
-.testimonials h2 {
+.testimonials h2,.articles h2 {
   text-align: center;
+  font-size: 36px;
 }
 .testimonials h2::after {
   left: calc(50% - 25px);
@@ -279,4 +287,11 @@ padding: 10px;
   align-items: center;
   justify-content: center;
   gap: 20px;
+}
+.card-list{
+  display: flex; align-items: center; justify-content: space-between;
+  padding-top: 50px; flex-wrap: wrap; gap: 30px; padding: 60px;
+}
+.articles a{
+  display: flex; gap: 10px; font-size: 16px; padding-top: 10px; 
 }
