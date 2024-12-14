@@ -295,3 +295,40 @@ padding: 10px;
 .articles a{
   display: flex; gap: 10px; font-size: 16px; padding-top: 10px; 
 }
+footer{
+  background-color: var(--main-color);
+  margin-top: 90px;
+  padding: 90px;
+  color: #fff;
+}
+footer .container .logo-footer a{
+    font-size: 24px;
+    font-weight: 500;
+    color:#fff;
+  }
+.letter-footer{
+    background-color:#fff;
+    color: var(--main-color);
+    width: 41px;
+    height: 41px;
+    font-size: 25px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    padding:4px 10px;
+  }
+  footer .container p{
+    line-height: 1.5;
+  }
+  footer .container .description{
+   margin-top: 40px;
+  }
+  .links {
+    display: flex; align-items: center; justify-content:space-between ; gap: 50px; flex-wrap: wrap;
+  }
+  .all{
+    display: flex; align-items:flex-start ; justify-content: space-around; flex-wrap: wrap; 
+  }
+  .links a{
+  display: block;
+  padding-top: 10px; color: #fff; font-size: 16px; font-weight: 500;
+  }
