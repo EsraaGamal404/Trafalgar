@@ -70,6 +70,9 @@ header nav input{
     .apps .container{
       display: flex; align-items: center; justify-content: space-between; flex-direction: column-reverse;
     }
+    .opinion .charater{
+      display: flex; flex-wrap: wrap; width: fit-content; flex-direction: column;
+    }
   }
   @media (min-width:992px){
     header nav label,
@@ -165,7 +168,7 @@ padding-top: 120px;
   color: var(--title-color);
   font-size: 38px;
 }
-.services .container .line, .Details .line {
+.services .container .line, .Details .line,.opinion .line {
   background-color: var(--title-color);
   height: 2px;
   width: 50px;
@@ -182,7 +185,7 @@ padding: 10px;
 .option h3{
   font-size: 24px;
 }
-.option p,.Details p,.services .container p{
+.option p,.Details p,.services .container p,.charater p{
   color: var(--text-color);
   line-height: 1.5;
 }
@@ -236,9 +239,44 @@ padding: 10px;
   position: relative;
   top:5vh;
 }
-.opinion{
+.testimonials {
+  color: var(--alt-text-color);
+  padding-top: 60px;
+}
+.testimonials .container {
   background-color: var(--main-color);
-  width: 600px; height: 300px;
-  padding: 20px; border-radius:20px;
-  display: flex;  justify-content: center; margin: auto;
+  border-radius: 20px;
+  padding: 40px;
+}
+.testimonials h2 {
+  text-align: center;
+}
+.testimonials h2::after {
+  left: calc(50% - 25px);
+  background-color: var(--white);
+}
+.testimonials .testimonial-info {
+  gap: 100px;
+  line-height: 1.6;
+}
+.testimonials .testimonial-info .user {
+  gap: 30px;
+}
+@media (min-width: 992px) {
+  .testimonials .testimonial-info q {
+    width: 50%;
+  }
+}
+.testimonials-info{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
+  flex-wrap: wrap;
+}
+.user{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
 }
